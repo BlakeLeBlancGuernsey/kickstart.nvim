@@ -779,6 +779,7 @@ require('lazy').setup({
     --
     -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
     'folke/tokyonight.nvim',
+<<<<<<< HEAD
 
     'mcchrish/zenbones.nvim',
     dependencies = { 'rktjmp/lush.nvim' },
@@ -786,18 +787,30 @@ require('lazy').setup({
     'robertmeta/nofrils',
 
     lazy = false, -- make sure we load this during startup if it is your main colorscheme
-    priority = 1000, -- Make sure to load this before all the other start plugins.
+    priority = 1000, -- make sure to load this before all the other start plugins
 
+    -- config = function()
+    --   -- Load the colorscheme here
+    --   vim.cmd.colorscheme 'tokyonight-night'
+    --
+    --   -- You can configure highlights by doing something like
+    --   vim.cmd.hi 'Comment gui=none'
+    -- end,
+
+    config = function()
+      vim.o.background = 'light'
+      vim.cmd.colorscheme 'nofrils-light'
+=======
+    priority = 1000, -- Make sure to load this before all the other start plugins.
     init = function()
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-      -- vim.cmd.colorscheme 'tokyonight-night'
-      vim.o.background = 'light'
-      vim.cmd.colorscheme 'nofrils-light'
+      vim.cmd.colorscheme 'tokyonight-night'
 
       -- You can configure highlights by doing something like:
       vim.cmd.hi 'Comment gui=none'
+>>>>>>> 5aeddfdd5d0308506ec63b0e4f8de33e2a39355f
     end,
   },
 
