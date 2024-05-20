@@ -1058,12 +1058,12 @@ vim.cmd [[
   let g:startify_custom_header = []
 
   " fzf
-  " fullscreen
-  nnoremap <C-p> :GFiles!<CR>
-  nnoremap <C-e> :FZF!<CR>
-  " nnoremap <C-s> :Ag!<SPACE>
-  nnoremap <C-s> :Rg!<SPACE>
-  nnoremap <C-b> :Buffers!<CR>
+  " Add bang to go fullscreen
+  nnoremap <C-p> :GFiles<CR>
+  nnoremap <C-e> :FZF<CR>
+  " nnoremap <C-s> :Ag<SPACE>
+  nnoremap <C-s> :Rg<SPACE>
+  nnoremap <C-b> :Buffers<CR>
   "
   " pop-up
   " nnoremap <C-p> :GFiles<CR>
@@ -1084,10 +1084,10 @@ vim.cmd [[
   " set shellquote=\"
   " set shellxquote=
 
-  let g:floaterm_width = 0.9
-  let g:floaterm_height = 0.9
-  " let g:floaterm_keymap_toggle = '<F12>'
-  nnoremap <silent> <F12> :FloatermToggle<CR>
+  " let g:floaterm_width = 0.9
+  " let g:floaterm_height = 0.9
+  " " let g:floaterm_keymap_toggle = '<F12>'
+  " nnoremap <silent> <F12> :FloatermToggle<CR>
 
 
 ]]

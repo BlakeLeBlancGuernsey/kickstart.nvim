@@ -1058,12 +1058,12 @@ vim.cmd [[
   let g:startify_custom_header = []
 
   " fzf
-  " fullscreen
-  nnoremap <C-p> :GFiles!<CR>
-  nnoremap <C-e> :FZF!<CR>
-  " nnoremap <C-s> :Ag!<SPACE>
-  nnoremap <C-s> :Rg!<SPACE>
-  nnoremap <C-b> :Buffers!<CR>
+  " Add bang to go fullscreen
+  nnoremap <C-p> :GFiles<CR>
+  nnoremap <C-e> :FZF<CR>
+  " nnoremap <C-s> :Ag<SPACE>
+  nnoremap <C-s> :Rg<SPACE>
+  nnoremap <C-b> :Buffers<CR>
   "
   " pop-up
   " nnoremap <C-p> :GFiles<CR>
@@ -1076,8 +1076,8 @@ vim.cmd [[
   " let g:fzf_preview_window = ['right,50%,<70(up,40%)', 'ctrl-/']
   let g:fzf_preview_window = []
   let g:fzf_force_termguicolors = 1
-  " let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.9 } }
-  let g:fzf_layout = { 'window': { 'width': 1.0, 'height': 1.0 } }
+  let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.9 } }
+  " let g:fzf_layout = { 'window': { 'width': 1.0, 'height': 1.0 } }
 
   " set shell=powershell
   " set shellcmdflag=-command
