@@ -1089,5 +1089,7 @@ vim.cmd [[
   " " let g:floaterm_keymap_toggle = '<F12>'
   " nnoremap <silent> <F12> :FloatermToggle<CR>
 
+  " set -g default-terminal "tmux-256color"
+  " set default-terminal "tmux-256color"
 
 ]]
