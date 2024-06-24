@@ -91,7 +91,7 @@ P.S. You can delete this when you're done too. It's your config now! :)
 -- vim.g.maplocalleader = ' '
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
-vim.g.have_nerd_font = false
+vim.g.have_nerd_font = true
 
 -- [[ Setting options ]]
 -- See `:help vim.opt`
@@ -449,7 +449,9 @@ require('lazy').setup({
 
       -- `neodev` configures Lua LSP for your Neovim config, runtime and plugins
       -- used for completion, annotations and signatures of Neovim apis
-      { 'folke/neodev.nvim', opts = {} },
+      -- { 'folke/neodev.nvim', opts = {} },
+      -- UPDATE 20240603 - Saw neodev is listed as EOL, author recommends transitioning to lazydev
+      { 'folke/lazydev.nvim', opts = {} },
     },
     config = function()
       -- Brief aside: **What is LSP?**
@@ -1064,6 +1066,7 @@ vim.cmd [[
   " nnoremap <C-s> :Ag<SPACE>
   nnoremap <C-s> :Rg<SPACE>
   nnoremap <C-b> :Buffers<CR>
+  nnoremap <C-h> :History<CR>
   "
   " pop-up
   " nnoremap <C-p> :GFiles<CR>
@@ -1090,6 +1093,6 @@ vim.cmd [[
   " nnoremap <silent> <F12> :FloatermToggle<CR>
 
   " set -g default-terminal "tmux-256color"
-  set default-terminal "tmux-256color"
+  " set default-terminal "tmux-256color"
 
 ]]

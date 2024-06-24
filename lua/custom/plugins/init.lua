@@ -137,4 +137,15 @@ return {
   {
     'junegunn/fzf.vim',
   },
+  {
+    'akinsho/toggleterm.nvim',
+    version = '*',
+    config = true,
+
+    -- config = function()
+    --   require('toggleterm').setup{(
+    --     -- defaults
+    --   )}
+    -- end,
+  },
 }
