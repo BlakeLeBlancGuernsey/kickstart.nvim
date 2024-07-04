@@ -368,7 +368,7 @@ require('lazy').setup({
             horizontal = {
               width = 0.95,
             },
-            preview_width = 0.60,
+            -- preview_width = 0.60,
           },
           -- path_display = function(opts, path)
           --   local tail = require("telescope.utils").path_tail(path)
@@ -901,6 +901,19 @@ require('lazy').setup({
       --    - Show your current context: https://github.com/nvim-treesitter/nvim-treesitter-context
       --    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
     end,
+  },
+  {
+    'junegunn/fzf',
+    -- run = 'fzf#install()',
+    run = function()
+      vim.fn['fzf#install']()
+    end,
+  },
+  {
+    'junegunn/fzf.vim',
+    dependencies = {
+      'junegunn/fzf',
+    },
   },
 
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
