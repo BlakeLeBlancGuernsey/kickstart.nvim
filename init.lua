@@ -902,19 +902,21 @@ require('lazy').setup({
       --    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
     end,
   },
-  {
-    'junegunn/fzf',
-    -- run = 'fzf#install()',
-    run = function()
-      vim.fn['fzf#install']()
-    end,
-  },
-  {
-    'junegunn/fzf.vim',
-    dependencies = {
-      'junegunn/fzf',
-    },
-  },
+  -- NOTE: fzf and fzf.vim explicit installs were not needed for fzf commands to work on the work
+  -- laptop's WSL, so commenting out here to try and find another solution
+  -- {
+  --   'junegunn/fzf',
+  --   -- run = 'fzf#install()',
+  --   run = function()
+  --     vim.fn['fzf#install']()
+  --   end,
+  -- },
+  -- {
+  --   'junegunn/fzf.vim',
+  --   dependencies = {
+  --     'junegunn/fzf',
+  --   },
+  -- },
 
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and

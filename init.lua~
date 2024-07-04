@@ -368,7 +368,7 @@ require('lazy').setup({
             horizontal = {
               width = 0.95,
             },
-            preview_width = 0.60,
+            -- preview_width = 0.60,
           },
           -- path_display = function(opts, path)
           --   local tail = require("telescope.utils").path_tail(path)
